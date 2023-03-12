@@ -2,7 +2,8 @@
 const choices = ['rock', 'paper', 'scissors'];
 
 // Initialize variables to store player and computer selections
-
+let playerSelect = null;
+let computerSelect = null;
 
 // Initialize variables to track the game progress and scores
 let gameTracker = 0;
@@ -11,8 +12,7 @@ let playerWins = 0
 ,   ties = 0;
 
 // Function to play one round of the game
-//Initialize variables to store player and computer selections
-function playRound(playerSelect, computerSelect) {
+function playRound() {
     // Check if it's a tie
     if (playerSelect === computerSelect) {
         alert('It was a tie!');
